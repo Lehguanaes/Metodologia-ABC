@@ -13,6 +13,7 @@ export default function ComoFunciona() {
         na organização dos estudos.
       </p>
 
+
       <div className="cards">
         <div className="card">
           <h3>A – Acertei com segurança</h3>
