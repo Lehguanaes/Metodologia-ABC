@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar.jsx";
-import Footer from "./components/Footer/Footer.jsx";
+import Navbar from "./components/navbar/Navbar.jsx";
+import Footer from "./components/footer/Footer.jsx";
 import ComoFunciona from "./pages/comoFunciona/ComoFunciona.jsx";
 import Metodologia from "./pages/metodologia/Metodologia.jsx";
 import SobreNos from "./pages/sobreNos/SobreNos.jsx";
