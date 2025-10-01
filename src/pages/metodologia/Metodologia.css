@@ -189,6 +189,10 @@
   transform: scale(1.1);
 }
 
+.metodologia-container span{
+  color: var(--cor-rosa);
+}
+
 /* Botão */
 .btn-gerar {
   align-items: start;
