@@ -9,8 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "apexcharts": "^5.3.5",
     "lucide-react": "^0.263.0",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.7.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^7.9.3"
   },
