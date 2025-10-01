@@ -275,7 +275,7 @@ export default function Metodologia() {
 
             {/* Input B */}
             <div className="input-group">
-              <label>B:</label>
+              <label>B</label>
               <div className="input-control">
                 <button onClick={() => decrementar(B, setB)}>-</button>
                 <input 
@@ -289,7 +289,7 @@ export default function Metodologia() {
 
             {/* Input C */}
             <div className="input-group">
-              <label>C:</label>
+              <label>C</label>
               <div className="input-control">
                 <button onClick={() => decrementar(C, setC)}>-</button>
                 <input 
