@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 🎨 Cores principais */
+  --cor-azul: #0E2A47;
+  --cor-rosa: #f13674;
+  --cor-branco: #ffffff;
+  --cor-cinza: #f3f4f6;
+  --cor-preto: #111111;
+
+
+  /* 🔠 Tipografia */
+  --fonte-principal: 'Libre Baskerville', serif;
+
+
+  /* 📏 Espaçamentos */
+  --espaco-pequeno: 8px;
+  --espaco-medio: 16px;
+  --espaco-grande: 24px;
+  --espaco-hiper-grande: 39px;
+  --espaco-extra-grande: 60px;
+
+  /* 🔎 Tamanhos de fonte */
+  --texto-padrão: 16px;
+  --texto-pequeno: 14px;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+/* Faz o container ocupar toda a altura da tela */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main ocupa o espaço restante entre navbar e footer */
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #fff;
+}

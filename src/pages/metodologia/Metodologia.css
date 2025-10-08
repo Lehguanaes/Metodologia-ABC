@@ -1,0 +1,234 @@
+/* ===============================
+   🌸 Estilos base da metodologia
+   =============================== */
+
+/* Container principal */
+.metodologia-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: #2d2d2d;
+  line-height: 1.7;
+  background: #fff;
+}
+
+/* ===== Cabeçalho da seção ===== */
+.metodologia-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+
+.metodologia-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--cor-rosa);
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.metodologia-header h2::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 4px;
+  background: #2e2833;
+  margin: 0.5rem auto 0 auto;
+  border-radius: 3px;
+}
+
+.metodologia-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  color: #4b4b4b;
+}
+
+/* ===== Cards da metodologia ===== */
+.metodologia-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+  margin-top: 2rem;
+}
+
+.metodologia-card {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 5px solid var(--cor-rosa);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.metodologia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.12);
+}
+
+.metodologia-card h3 {
+  font-size: 1.3rem;
+  color: var(--cor-rosa);
+  margin-bottom: 0.6rem;
+}
+
+.metodologia-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* ===== Lista de passos ===== */
+.metodologia-lista {
+  margin-top: 2rem;
+  padding-left: 1.5rem;
+}
+
+.metodologia-lista li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background: #f9f9f9;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid var(--cor-rosa);
+  border-radius: 6px;
+  transition: transform 0.25s ease, background 0.25s ease;
+  position: relative;
+}
+
+.metodologia-lista li::before {
+  content: "✔";
+  position: absolute;
+  left: -25px;
+  color: var(--cor-rosa);
+  font-weight: bold;
+}
+
+.metodologia-lista li:hover {
+  background: #fff0f6;
+  transform: translateX(6px);
+}
+
+/* ===== Botão principal ===== */
+.metodologia-btn {
+  display: inline-block;
+  margin-top: 2.5rem;
+  padding: 0.9rem 1.8rem;
+  background: var(--cor-rosa);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.metodologia-btn:hover {
+  background: #2e2833;
+  color: var(--cor-rosa);
+  transform: translateY(-3px);
+}
+/* ===== Formulário ABC ===== */
+.form-ABC {
+  display: flex;
+  justify-content: space-between; 
+  gap: 20px; 
+  margin-top: 50px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.input-group label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--cor-rosa);
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Incrementar/Decrementar*/
+.input-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-control input {
+  width: 100px;
+  text-align: center;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.input-control button {
+  padding: 5px 10px;
+  border: solid 1px;
+  color: var(--cor-rosa);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.input-control button:hover {
+  transform: scale(1.1);
+}
+
+.metodologia-container span{
+  color: var(--cor-rosa);
+}
+
+/* Botão */
+.btn-gerar {
+  align-items: start;
+  margin-top: 25px;
+  margin: 2rem auto 0;
+  padding: 0.9rem 1.8rem;
+  background: linear-gradient(90deg, #e51e8c, #ec5790);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-gerar:hover {
+    color: var( #ff0efb);
+  transform: translateY(-2px);
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .metodologia-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .metodologia-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .metodologia-card {
+    padding: 1.2rem;
+  }
+
+  .metodologia-lista li {
+    font-size: 0.95rem;
+  }
+}

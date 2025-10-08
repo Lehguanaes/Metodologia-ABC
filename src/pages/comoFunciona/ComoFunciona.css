@@ -1,0 +1,120 @@
+/* ===== Estilos globais da página Como Funciona ===== */
+.como-funciona {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: #2d3748; /* cinza suave */
+  line-height: 1.8;
+  background: #fff;
+}
+
+/* Título principal */
+.como-funciona h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--cor-rosa, #e91e63);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.como-funciona h2::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: #2e2833;
+  margin: 0.8rem auto 0;
+  border-radius: 2px;
+}
+
+/* Texto introdutório */
+.como-funciona p {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  color: #4b5563;
+  text-align: justify;
+}
+
+/* Cards explicativos */
+.como-funciona .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.como-funciona .card {
+  background: #f9fafb;
+  padding: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.como-funciona .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.como-funciona .card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--cor-rosa);
+  margin-bottom: 0.5rem;
+}
+
+.como-funciona .card p {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* Lista de dicas extras */
+.como-funciona ul {
+  margin-top: 1.5rem;
+  padding-left: 1.2rem;
+  list-style: disc;
+  color: #374151;
+}
+
+.como-funciona li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+/* Botão */
+.como-funciona .btn {
+  display: inline-block;
+  margin: 2rem auto 0;
+  padding: 0.9rem 1.8rem;
+  background: linear-gradient(90deg, #e51e8c, #ec5790);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.como-funciona .btn:hover {
+    color: var( #ff0efb);
+  transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .como-funciona {
+    padding: 1.5rem;
+  }
+
+  .como-funciona h2 {
+    font-size: 1.8rem;
+  }
+
+  .como-funciona .card {
+    padding: 1rem;
+  }
+}
