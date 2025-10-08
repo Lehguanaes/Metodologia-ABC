@@ -1,120 +1,132 @@
 /* ===== Estilos globais da página Como Funciona ===== */
 .como-funciona {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 3rem 2rem;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  color: #2d3748; /* cinza suave */
+  color: #2d3748;
   line-height: 1.8;
   background: #fff;
 }
 
 /* Título principal */
 .como-funciona h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 800;
-  color: var(--cor-rosa, #e91e63);
-  margin-bottom: 1.5rem;
+  color: var(--cor-rosa, #f13674);
+  margin-bottom: 2rem;
   text-align: center;
   position: relative;
+  letter-spacing: 0.5px;
 }
 
 .como-funciona h2::after {
   content: "";
   display: block;
-  width: 120px;
+  width: 130px;
   height: 4px;
-  background: #2e2833;
+  background: var(--cor-azul, #0e2a47);
   margin: 0.8rem auto 0;
   border-radius: 2px;
 }
 
 /* Texto introdutório */
 .como-funciona p {
-  margin-top: 1rem;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: #4b5563;
   text-align: justify;
+  max-width: 850px;
+  margin: 0 auto 2.5rem auto;
 }
 
 /* Cards explicativos */
 .como-funciona .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem; /* 👈 aumenta espaçamento entre os cards */
+  margin-top: 2.5rem;
+  justify-items: center;
 }
 
 .como-funciona .card {
   background: #f9fafb;
-  padding: 1.2rem;
-  border-radius: 10px;
+  padding: 1.8rem;
+  border-radius: 14px;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
 }
 
 .como-funciona .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .como-funciona .card h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  color: var(--cor-rosa);
-  margin-bottom: 0.5rem;
+  color: var(--cor-azul, #0e2a47);
 }
 
 .como-funciona .card p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #374151;
+  line-height: 1.6;
 }
 
 /* Lista de dicas extras */
 .como-funciona ul {
-  margin-top: 1.5rem;
-  padding-left: 1.2rem;
+  margin-top: 2rem;
+  padding-left: 1.5rem;
   list-style: disc;
   color: #374151;
 }
 
 .como-funciona li {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.9rem;
   font-size: 1rem;
 }
 
 /* Botão */
 .como-funciona .btn {
   display: inline-block;
-  margin: 2rem auto 0;
-  padding: 0.9rem 1.8rem;
-  background: linear-gradient(90deg, #e51e8c, #ec5790);
+  margin: 3rem auto 0;
+  padding: 1rem 2.2rem;
+  background: linear-gradient(90deg, var(--cor-rosa, #f13674), #ff6b9a);
   color: #fff;
   font-weight: 600;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
 }
 
 .como-funciona .btn:hover {
-    color: var( #ff0efb);
-  transform: translateY(-2px);
+  background: linear-gradient(90deg, #ff6b9a, var(--cor-rosa, #f13674));
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
   .como-funciona {
-    padding: 1.5rem;
+    padding: 2rem 1.2rem;
   }
 
   .como-funciona h2 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+  }
+
+  .como-funciona .cards {
+    gap: 1.8rem;
   }
 
   .como-funciona .card {
-    padding: 1rem;
+    max-width: 100%;
+    padding: 1.4rem;
   }
 }
