@@ -5,8 +5,6 @@ import ComoFunciona from "./pages/comoFunciona/ComoFunciona.jsx";
 import Metodologia from "./pages/metodologia/Metodologia.jsx";
 import SobreNos from "./pages/sobreNos/SobreNos.jsx";
 
-
-
 function App() {
   return (
     <Router>
@@ -14,24 +12,12 @@ function App() {
         <Navbar />
         <main className="main-content">
           <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <h1 className="text-3xl font-bold text-600">Bem-vindo!</h1>
-                  <p className="mt-4 text-gray-700">
-                    Aqui vai o conteúdo principal do seu sistema.
-                  </p>
-                </>
-              }
-            />
-           
-        
+            {/* Página inicial abre diretamente "Como Funciona" */}
+            <Route path="/" element={<ComoFunciona />} />
+
             <Route path="/ComoFunciona" element={<ComoFunciona />} />
-                        <Route path="/Metodologia" element={<Metodologia />} />
-                            <Route path="/SobreNos" element={<SobreNos/>} />
-
-
+            <Route path="/Metodologia" element={<Metodologia />} />
+            <Route path="/SobreNos" element={<SobreNos />} />
           </Routes>
         </main>
         <Footer />
