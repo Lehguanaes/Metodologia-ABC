@@ -154,22 +154,22 @@
 
 .botao-metodologia {
   display: inline-block;
-  background: var(--cor-rosa);
+  padding: 1rem 2.2rem;
+  background: linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-azul) 100%);
   color: #fff;
-  padding: 1rem 2rem;
-  border-radius: 8px;
   font-weight: 600;
+  border: none;
+  border-radius: 10px;
   text-decoration: none;
-  font-size: 1rem;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+  transition: all 1s ease;
 }
 
 .botao-metodologia:hover {
-  background: transparent;
-  color: var(--cor-rosa);
-  border-color: var(--cor-rosa);
-  transform: translateY(-2px);
+  background: linear-gradient(90deg, var(--cor-azul) 0%, var(--cor-rosa) 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* 📱 Responsividade */
@@ -191,16 +191,19 @@
     max-width: 90%;
   }
 
-  .cards-individuais {
-    gap: 1rem;
-  }
-
-  .card {
-    width: 130px;
-  }
-
   .card img {
     width: 80px;
     height: 80px;
+  }
+
+  .cards-individuais {
+    flex-direction: column;   /* 👈 coloca um card embaixo do outro */
+    align-items: center;       /* centraliza tudo */
+    gap: 2rem;                 /* aumenta espaçamento vertical */
+  }
+
+  .card {
+    width: 90%;               /* card larga e bonita no responsivo */
+    max-width: 350px;         /* limite para não ficar enorme */
   }
 }
