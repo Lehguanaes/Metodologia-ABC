@@ -352,19 +352,12 @@
   }
 
   .input-group {
-    width: 100%;
-    max-width: 340px;
+    gap: 2px !important;
+    margin-bottom: 0px !important;
   }
 
   .input-control {
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 10px;
-  }
-
-  .input-control input {
-    max-width: 85px;
+    gap: 4px !important;
   }
 
   .barra-cores-controls { gap: 18px; }
@@ -395,4 +388,7 @@
   .barra-cores-title {
   margin-top: 0px;
 }
+  .input-group {
+    margin-bottom: 0px; /* ainda mais compacto no mobile pequeno */
+  }
 }
