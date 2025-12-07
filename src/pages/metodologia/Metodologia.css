@@ -187,8 +187,15 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: #2e2833;
-  text-align: left;
-  margin-bottom: 16px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.barra-cores-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2e2833;
+  text-align: center;
 }
 
 .barra-cores-controls {
@@ -239,7 +246,27 @@
    Diagnóstico
    =============================== */
 .diagnostico {
+  margin-top: 30px;
   margin-bottom: 50px;
+}
+
+.diagnostico-titulo {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--cor-azul);
+  margin-bottom: 0.8rem;
+  position: relative;
+  text-align: center;
+}
+
+.diagnostico-titulo::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 4px;
+  background: var(--cor-rosa);
+  margin: 0.5rem auto 0 auto;
+  border-radius: 3px;
 }
 
 .diagnostico-texto {
@@ -248,6 +275,7 @@
   color: var(--cor-rosa);
   text-align: center;
   font-size: 1.2rem;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -328,6 +356,12 @@
   .input-control {
     width: 100%;
     justify-content: space-between;
+    flex-direction: row;     /* mantém os 3 itens ( - input + ) em linha */
+    gap: 10px;
+  }
+
+  .input-control input {
+    max-width: 85px;         /* mais compacto para caber melhor */
   }
 
   .barra-cores-controls { gap: 18px; }
@@ -336,7 +370,17 @@
 
 @media (max-width: 500px) {
   .input-control {
-    flex-direction: column;
-    gap: 12px;
+    flex-direction: row;      /* impede quebrar no celular */
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .input-control input {
+    max-width: 75px;          /* reduz um pouco para telas bem pequenas */
+  }
+
+  .input-control button {
+    padding: 5px 10px;        /* botões menores */
+    font-size: 1rem;
   }
 }

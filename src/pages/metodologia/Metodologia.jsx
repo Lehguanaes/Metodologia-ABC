@@ -290,40 +290,9 @@ Atualmente você inseriu ${total}.`,
 
       {showResult && (
         <div>
-          <div className="barra-cores" style={{ marginTop: 16 }}>
-            <h3 className="barra-cores-title">Personalizar cores dos gráficos</h3>
-
-            <div className="barra-cores-controls">
-              <div className="cor-item">
-                <label>Cor A</label>
-                <input
-                  type="color"
-                  value={corA}
-                  onChange={(e) => setCorA(e.target.value)}
-                />
-              </div>
-
-              <div className="cor-item">
-                <label>Cor B</label>
-                <input
-                  type="color"
-                  value={corB}
-                  onChange={(e) => setCorB(e.target.value)}
-                />
-              </div>
-
-              <div className="cor-item">
-                <label>Cor C</label>
-                <input
-                  type="color"
-                  value={corC}
-                  onChange={(e) => setCorC(e.target.value)}
-                />
-              </div>
-            </div>
-          </div>
         {/* DIAGNÓSTICO FINAL */}
         <div className="diagnostico">
+          <p className="diagnostico-titulo">Diagnóstico Atual</p>
           <p className="diagnostico-texto">{diagnostico}</p>
         </div>
 
@@ -364,6 +333,39 @@ Atualmente você inseriu ${total}.`,
                 width="100%"
               />
             </div>
+          </div>
+           <div className="barra-cores" style={{ marginTop: 16 }}>
+            <h3 className="barra-cores-title">Personalizar cores dos gráficos</h3>
+
+            <div className="barra-cores-controls">
+              <div className="cor-item">
+                <label>Cor A</label>
+                <input
+                  type="color"
+                  value={corA}
+                  onChange={(e) => setCorA(e.target.value)}
+                />
+              </div>
+
+              <div className="cor-item">
+                <label>Cor B</label>
+                <input
+                  type="color"
+                  value={corB}
+                  onChange={(e) => setCorB(e.target.value)}
+                />
+              </div>
+
+              <div className="cor-item">
+                <label>Cor C</label>
+                <input
+                  type="color"
+                  value={corC}
+                  onChange={(e) => setCorC(e.target.value)}
+                />
+              </div>
+            </div>
+            <h4 className="barra-cores-subtitle">Clique nas cores para alterar!</h4>
           </div>
         </div>
       )}
