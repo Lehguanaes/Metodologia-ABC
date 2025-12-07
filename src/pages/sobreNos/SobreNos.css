@@ -6,18 +6,31 @@
 }
 
 .titulo {
-  font-size: 2.5rem;
-  color: var(--cor-azul);
-  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
+  color: var(--cor-rosa);
+  margin-bottom: 0.8rem;
+  position: relative;
+  text-align: center;
+}
+  
+.titulo::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 4px;
+  background: var(--cor-azul, #0e2a47);
+  margin: 0.8rem auto 0;
+  border-radius: 2px;
 }
 
 .descricao {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto 3rem;
   line-height: 1.7;
-  color: #666;
+  color: #374151;
+  margin-top: 25px;
 }
 
 .card-grupo {
@@ -43,9 +56,10 @@
 }
 
 .card-grupo h3 {
-  font-size: 1.2rem;
-  color: var(--cor-azul);
+  font-size: 1.3rem;
+  color: var(--cor-rosa);
   font-weight: 600;
+  margin-top: 10px;
 }
 .cards-individuais {
   display: flex;

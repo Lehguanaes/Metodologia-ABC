@@ -18,13 +18,12 @@ export default function SobreNos() {
         Somos alunas do <strong>3º AMS da ETEC Zona Leste</strong> e juntas
         desenvolvemos este projeto como forma de facilitar a aplicação da{" "}
         <strong>Metodologia ABC</strong>, utilizada pelo nosso professor
-        orientador.
+        orientador Marlon Marques.
       </p>
 
-    
       <div className="card-grupo">
         <img src={grupo} alt="Foto do grupo de alunas" className="foto-grupo" />
-        <h3>Equipe 3º AMS - ETEC Zona Leste</h3>
+        <h3 >Equipe 3º AMS - ETEC Zona Leste</h3>
       </div>
 
 <div className="cards-individuais">
@@ -57,7 +56,7 @@ export default function SobreNos() {
     <div className="card-nome">Leticia Guanaes</div>
     <div className="card-contato">
       <div className="contato-label">Email para contato:</div>
-      <div className="contato-email">leticia@etec.com</div>
+      <div className="contato-email">lehguanaes@gmail.com</div>
     </div>
   </div>
   <div className="card">

@@ -13,33 +13,39 @@ export default function ComoFunciona() {
         na organização dos estudos.
       </p>
 
-
       <div className="cards">
+
         <div className="card">
+          <i className="fas fa-check-circle card-icon icon-a"></i>
           <h3>A – Acertei com segurança</h3>
           <p>
             Questões que você respondeu corretamente e com total confiança.
             Mostram domínio do conteúdo.
           </p>
         </div>
+
         <div className="card">
+          <i className="fas fa-question-circle card-icon icon-b"></i>
           <h3>B – Acertei com dúvida</h3>
           <p>
             Questões que você acertou, mas não tinha certeza absoluta.
             Indicam conteúdos que precisam de revisão.
           </p>
         </div>
+
         <div className="card">
+          <i className="fas fa-times-circle card-icon icon-c"></i>
           <h3>C – Errei ou não sabia</h3>
           <p>
             Questões que você errou ou não soube responder. São suas maiores
             oportunidades de aprendizado.
           </p>
         </div>
+
       </div>
 
-      <p>
-        👉 Ao final, basta somar a quantidade de questões em cada categoria
+      <p className="info-adicional">
+        Ao final, basta somar a quantidade de questões em cada categoria
         (A, B e C). O sistema irá gerar um <b>gráfico</b> mostrando seu
         diagnóstico e sugerindo prioridades de estudo.
       </p>

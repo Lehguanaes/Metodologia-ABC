@@ -1,5 +1,5 @@
 /* ============================================================
-   🌸 METODOLOGIA – ESTILO COMPLETO + GRÁFICOS RESPONSIVOS
+   METODOLOGIA – ESTILO COMPLETO + GRÁFICOS RESPONSIVOS
    ============================================================ */
 
 /* Container principal */
@@ -42,7 +42,7 @@
 .metodologia-header p {
   max-width: 700px;
   margin: 0 auto;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   color: #4b4b4b;
 }
 
@@ -56,7 +56,7 @@
 
 .metodologia-lista li {
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background: #f9f9f9;
   padding: 0.8rem 1rem;
   border-left: 4px solid var(--cor-rosa);
@@ -153,8 +153,8 @@
    Botão Gerar
    =============================== */
 .btn-gerar {
-  display: inline-block;
-  margin-top: 2rem;
+  display: block;               /* <-- faz o centralizado funcionar */
+  margin: 2rem 0 0 0;   /* alinhado à esquerda */
   padding: 0.9rem 1.8rem;
   background: linear-gradient(90deg, var(--cor-rosa) 0%, var(--cor-azul) 100%);
   color: #fff;
@@ -167,6 +167,7 @@
 }
 
 .btn-gerar:hover {
+  background: linear-gradient(90deg, var(--cor-azul) 0%, var(--cor-rosa) 100%);
   transform: translateY(-3px);
   box-shadow: 0px 10px 26px rgba(229, 30, 140, 0.22);
 }
@@ -280,7 +281,7 @@
 }
 
 /* ============================================================
-   GRÁFICOS — RESPONSIVOS (mantidos do seu CSS original)
+   GRÁFICOS — RESPONSIVOS
    ============================================================ */
 
 .apexcharts-canvas {
@@ -306,8 +307,8 @@
 .graficos-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
-  margin-top: 30px;
+  gap: 40px;                  /* <-- aumentado para mais espaço */
+  margin-top: 40px;
   width: 100%;
 }
 
@@ -325,6 +326,7 @@
 @media (max-width: 768px) {
   .graficos-grid {
     grid-template-columns: 1fr;
+    gap: 75px;              /* <-- mais espaço no mobile */
   }
 }
 
@@ -337,6 +339,7 @@
   .input-control input { max-width: 90px; }
   .barra-cores-controls { gap: 26px; }
   .cor-item input[type="color"] { width: 65px; height: 65px; }
+  .btn-gerar { margin: 2rem auto 0 auto;     /* <-- centralizado */}
 }
 
 @media (max-width: 768px) {
@@ -356,12 +359,12 @@
   .input-control {
     width: 100%;
     justify-content: space-between;
-    flex-direction: row;     /* mantém os 3 itens ( - input + ) em linha */
+    flex-direction: row;
     gap: 10px;
   }
 
   .input-control input {
-    max-width: 85px;         /* mais compacto para caber melhor */
+    max-width: 85px;
   }
 
   .barra-cores-controls { gap: 18px; }
@@ -370,17 +373,26 @@
 
 @media (max-width: 500px) {
   .input-control {
-    flex-direction: row;      /* impede quebrar no celular */
+    flex-direction: row;
     justify-content: center;
     gap: 8px;
   }
 
   .input-control input {
-    max-width: 75px;          /* reduz um pouco para telas bem pequenas */
+    max-width: 75px;
   }
 
   .input-control button {
-    padding: 5px 10px;        /* botões menores */
+    padding: 5px 10px;
     font-size: 1rem;
   }
+
+  .btn-gerar {
+    width: 100%;
+    max-width: 300px; 
+    margin-bottom: 40px;        /* botão mais adaptado ao mobile */
+  }
+  .barra-cores-title {
+  margin-top: 0px;
+}
 }
