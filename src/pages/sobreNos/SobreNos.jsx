@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./SobreNos.css";
 
 // importa imagens (subindo 2 níveis)
-import grupo from "../../assets/grupo.jpg";
+import grupo from "../../assets/grupo.jpeg";
 import aluna1 from "../../assets/aluna1.png";
 import aluna2 from "../../assets/aluna2.png";
 import aluna3 from "../../assets/aluna3.png";
