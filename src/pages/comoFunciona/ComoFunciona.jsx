@@ -8,7 +8,7 @@ export default function ComoFunciona() {
 
       <p>
         A metodologia <b>ABC</b> é uma técnica simples de autoavaliação que
-        ajuda você a medir seu desempenho em simulados ou provas. 
+        ajuda você a medir seu desempenho em simulados ou provas do ENEM. 
         Ela facilita a identificação de pontos fortes e fracos, além de orientar
         na organização dos estudos.
       </p>

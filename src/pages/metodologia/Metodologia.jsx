@@ -232,7 +232,7 @@ Atualmente você inseriu ${total}.`,
       </div>
 
       <ul className="metodologia-lista">
-        <li>Resolva o simulado normalmente.</li>
+        <li>Resolva o simulado ENEM normalmente.</li>
         <li>Classifique cada questão como A, B ou C.</li>
         <li>Insira os números no sistema.</li>
         <li>Gere seu diagnóstico.</li>
