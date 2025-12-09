@@ -32,7 +32,7 @@ export default function SobreNos() {
     <div className="card-nome">Gabrielly Nascimento</div>
     <div className="card-contato">
       <div className="contato-label">Email para contato:</div>
-      <div className="contato-email">gabrielly@etec.com</div>
+      <div className="contato-email">gabriellynasserb@gmail.com</div>
     </div>
   </div>
   <div className="card">

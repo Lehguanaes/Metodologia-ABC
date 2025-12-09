@@ -62,65 +62,85 @@ Atualmente você inseriu ${total}.`,
     let diag = "";
 
     if (classA === "A+" && classB === "B-" && classC === "C-") {
-      diag =
-        "O MELHOR CENÁRIO POSSÍVEL TRABALHO DE MANUTENÇÃO E REVISÃO ESPAÇADA DOS CONTEÚDOS REVISÃO ESPAÇADA: ENTRE 1 MÊS E 15 DIAS DE REVISÃO DO CONTEÚDO";
-    } else if (classA === "A+" && classB === "B+/-" && classC !== "C-") {
-      diag =
-        "ABAIXO DO MELHOR CENÁRIO MANUTENÇÃO DOS A´S E FOCO EM ENTENDER OS B´S (APOSTILA OU VIDEOAULA)";
-    } else if (classA === "A+" && classB !== "B+" && classC === "C-") {
-      diag = "FOQUE EM DIMINUIR O NÚMERO DE B´S (APOSTILA OU VIDEOAULA)";
-    } else if (classA !== "A+" && classB === "B-" && classC === "C+/-") {
-      diag =
-        "FOCO EM IGUALAR C´S COM B´S (APOSTILA OU VIDEOAULA) E SÓ DEPOIS DISSO FOCAR NOS B´S";
-    } else if (classA === "A+" || classB === "B+/-" || classC === "C+/-") {
-      diag =
-        "FOCO EM COLOCAR OS C´S NOS B´S (COMEÇAR A ENTENDER O QUE NÃO SEI: ESTUDE POR APOSTILA)";
-    } else if (classA === "A+" && classB === "B+" && classC === "C+/-") {
-      diag =
-        "PEGUE OS B´S E ESTUDE E FAÇA EXERCÍCIOS (ENTENDENDO-OS, FARÁ SEUS C´S DIMINUIREM)";
-    } else if (classA === "A+" && classB === "B-" && classC === "C+") {
-      diag = "FOCAR EM DIMINUIR C´S (VEJA VÍDEOAULAS DOS ASSUNTOS)";
-    } else if (classA === "A+" && classB === "B+/-" && classC === "C+") {
-      diag = "ESTUDAR B´S E C´S (VIDEOAULA E EXERCÍCIOS DE FORMA REPETITIVA)";
-    } else if (classA === "A+" && classB === "B+" && classC === "C+") {
-      diag =
-        "ESTUDAR B´S E C´S (VIDEOAULA E EXERCÍCIOS DE FORMA MUITO REPETITIVA)";
-    } else if (classA === "A+/-" && classB === "B-" && classC === "C-") {
-      diag = "FOCO EM AUMENTAR O NÚMERO DE A´S (APOSTILA + EXERCÍCIOS)";
-    } else if (classA === "A+/-" && classB === "B+/-" && classC === "C-") {
-      diag = "FOCO EM AUMENTAR A´S E B´S (APOSTILA + EXERCÍCIOS)";
-    } else if (classA === "A+/-" && classB === "B+" && classC === "C-") {
-      diag = "FOCAR EM DIMINUIR B´S (APOSTILA + EXERCÍCIOS).";
-    } else if (classA === "A+/-" && classB === "B-" && classC === "C+/-") {
-      diag = "ESTUDAR OS C´S E INICIAR O PROCESSO DE ENTENDÊ-LOS.";
-    } else if (classA === "A+/-" && classB === "B+/-" && classC === "C+/-") {
-      diag = "ESTUDAR OS B´S E C´S (VIDEOAULA + EXERCÍCIOS).";
-    } else if (classA === "A+/-" && classB === "B+" && classC === "C+/-") {
-      diag = "DIMINUIR C´S E TRANSFORMAR B´S EM A´S.";
-    } else if (classA === "A+/-" && classB === "B-" && classC === "C+") {
-      diag = "FOCO EM DIMINUIR C´S (VIDEOAULA + EXERCÍCIOS).";
-    } else if (classA === "A+/-" && classB === "B+/-" && classC === "C+") {
-      diag = "FOCO EM DIMINUIR C´S E ESTUDAR BEM OS B´S.";
-    } else if (classA === "A+/-" && classB === "B+" && classC === "C+") {
-      diag = "FOCO EM DIMINUIR B´S E C´S.";
-    } else if (classA === "A-" && classB === "B-" && classC === "C-") {
-      diag = "AQUI É PRECISO REESTUDAR TODOS OS ASSUNTOS.";
-    } else if (classA === "A-" && classB === "B+/-" && classC === "C-") {
-      diag = "É PRECISO PROCURAR UM CURSINHO PRÉ-VESTIBULAR DE NÍVEL MÉDIO.";
-    } else if (classA === "A-" && classB === "B+" && classC === "C-") {
-      diag = "É PRECISO PROCURAR UM CURSINHO PRÉ-VESTIBULAR DE NÍVEL FORTE.";
-    } else if (classA === "A-" && classB === "B-" && classC === "C+/-") {
-      diag = "CURSINHO DE NÍVEL FORTE + ESTUDOS COMPLEMENTARES.";
-    } else if (classA === "A-" && classB === "B+/-" && classC === "C+/-") {
-      diag = "CURSINHO PREPARATÓRIO + ROTINA INTENSA.";
-    } else if (classA === "A-" && classB === "B+" && classC === "C+/-") {
-      diag = "CURSINHO + MUITO EXERCÍCIO BÁSICO.";
-    } else if (classA === "A-" && classB === "B-" && classC === "C+") {
-      diag = "RECOMEÇAR O ENSINO MÉDIO (VIDEOAULAS + EXERCÍCIOS).";
-    } else if (classA === "A-" && classB === "B+/-" && classC === "C+") {
-      diag = "REFORÇO ESCOLAR MÉDIO + REVISÃO DO FUNDAMENTAL.";
-    } else {
-      diag = "REVER FUNDAMENTAL II — LACUNAS IMPORTANTES.";
+      diag = "O MELHOR CENÁRIO POSSÍVEL: TRABALHO DE MANUTENÇÃO E REVISÃO ESPAÇADA DOS CONTEÚDOS REVISÃO ESPAÇADA: ENTRE 1 MÊS E 15 DIAS DE REVISÃO DO CONTEÚDO.";
+    } 
+    else if (classA === "A+" && classB === "B+/-" && classC !== "C-") {
+      diag = "ABAIXO DO MELHOR CENÁRIO: MANUTENÇÃO DOS A´S E FOCO EM ENTENDER OS B´S (APOSTILA OU VIDEOAULA).";
+    } 
+    else if (classA === "A+" && classB == "B+" && classC === "C-") {
+      diag = "CENÁRIO ANIMADOR: FOQUE EM DIMINUIR O NÚMERO DE B´S (APOSTILA OU VIDEOAULA).";
+    } 
+    else if (classA !== "A+" && classB === "B-" && classC === "C+/-") {
+      diag = "MELHOR: FOQUE EM IGUALAR C´S COM B´S (APOSTILA OU VIDEOAULA) E SÓ DEPOIS DISSO FOCAR NOS B´S.";
+    } 
+    else if (classA === "A+" && classB === "B+" && classC === "C+/-") {
+      diag = "BOM: PEGUE OS B´S E ESTUDE E FAÇA EXERCÍCIOS (ENTENDENDO-OS, FARÁ SEUS C´S DIMINUIREM).";
+    } 
+    else if (classA === "A+" && classB === "B-" && classC === "C+") {
+      diag = "PERTO DE BOM: FOQUE EM DIMINUIR C´S (VEJA VÍDEOAULAS DOS ASSUNTOS) - PASSE A CONHECER O QUE NÃO SABE NADA.";
+    } 
+    else if (classA === "A+" && classB === "B+/-" && classC === "C+") {
+      diag = "MAIS ACIMA DA MÉDIA: ESTUDE B´S E C´S (VIDEOAULA E EXERCÍCIOS DE FORMA REPETITIVA): DE 1 SEMANA A 15 DIAS REVENDO CONTEÚDOS.";
+    } 
+    else if (classA === "A+" && classB === "B+" && classC === "C+") {
+      diag = "ACIMA DA MÉDIA: ESTUDE B´S E C´S (VIDEOAULA E EXERCÍCIOS DE FORMA MUITO REPETITIVA): DE 1 SEMANA A 10 DIAS REVENDO CONTEÚDOS.";
+    } 
+    else if (classA === "A+/-" && classB === "B-" && classC === "C-") {
+      diag = "NA MÉDIA: FOQUE EM AUMENTAR O NÚMERO DE A´S (APOSTILA + EXERCÍCIOS), OU SEJA, VOCÊ PRECISA APRENDER MAIS (MAIS FOCO E REPETIÇÃO).";
+    } 
+    else if (classA === "A+/-" && classB === "B+/-" && classC === "C-") {
+      diag = "UM POUCO ABAIXO DA MÉDIA: FOQUE EM AUMENTAR A´S E B´S (APOSTILA + EXERCÍCIOS), OU SEJA, VOCÊ PRECISA APRENDER MAIS (MAIS FOCO E REPETIÇÃO).";
+    } 
+    else if (classA === "A+/-" && classB === "B+" && classC === "C-") {
+      diag = "MEDÍOCRE: FOQUE EM DIMINUIR B´S (ISSO FAZ SEUS A'S AUMENTAREM: APOSTILA + EXERCÍCIOS) DE 1 SEMANDA A 15 DIAS REVENDO CONTEÚDOS.";
+    } 
+    else if (classA === "A+/-" && classB === "B-" && classC === "C+/-") {
+      diag = "REGULAR: ESTUDE OS C´S E INICIAR O PROCESSO DE ENTENDÊ-LOS (APOSTILA + EXERCÍCIOS) DE 1 SEMANA A 15 DIAS REVENDO CONTEÚDOS.";
+    } 
+    else if (classA === "A+/-" && classB === "B+/-" && classC === "C+/-") {
+      diag = "ABAIXO DE REGULAR: ESTUDE OS B´S E C´S (VIDEOAULA + EXERCÍCIOS) DE 1 SEMANA A 15 DIAS REVENDO CONTEÚDOS.";
+    } 
+    else if (classA === "A+/-" && classB === "B+" && classC === "C+/-") {
+      diag = "ZONA DE INSEGURANÇA: DIMINUIR C´S E TRANSFORMAR B´S EM A´S (VIDEOAULA + EXERCÍCIOS) DE 1 SEMANA A 10 DIAS REVENDO CONTEÚDOS.";
+    } 
+    else if (classA === "A+/-" && classB === "B-" && classC === "C+") {
+      diag = "INSEGURANÇA: FOQUE EM DIMINUIR C´S (VIDEOAULA + EXERCÍCIOS) DE 1 SEMANA A 10 DIAS REVENDO CONTEÚDOS.";
+    } 
+    else if (classA === "A+/-" && classB === "B+/-" && classC === "C+") {
+      diag = "NO LIMITE: FOQUE EM DIMINUIR C´S E ESTUDAR BEM OS B´S (VIDEOAULA + EXERCÍCIOS) DE 1 SEMANA A 10 DIAS REVENDO CONTEÚDOS.";
+    } 
+    else if (classA === "A+/-" && classB === "B+" && classC === "C+") {
+      diag = "LIMITE PERIGOSO: FOQUE EM DIMINUIR B´S E C´S (VIDEOAULA + EXERCÍCIOS) DE 1 SEMANA A 10 DIAS REVENDO CONTEÚDOS.";
+    } 
+    else if (classA === "A-" && classB === "B-" && classC === "C-") {
+      diag = "ZONA DE ALERTA: AQUI É PRECISO REESTUDAR TODOS OS ASSUNTOS ATRAVÉS VIDEOAULA OU APOSTILA, DE FORMA REPETITIVA DE 1 SEMANA A 10 DIAS REVENDO CONTEÚDOS.";
+    } 
+    else if (classA === "A-" && classB === "B+/-" && classC === "C-") {
+      diag = "RUIM: É PRECISO PROCURAR UM CURSINHO PRÉ-VESTIBULAR DE NÍVEL MÉDIO (ALÉM DE ESTUDAR EM CASA).";
+    } 
+    else if (classA === "A-" && classB === "B+" && classC === "C-") {
+      diag = "BEM RUIM: É PRECISO PROCURAR UM CURSINHO PRÉ-VESTIBULAR DE NÍVEL FORTE (ALÉM DE ESTUDAR EM CASA).";
+    } 
+    else if (classA === "A-" && classB === "B-" && classC === "C+/-") {
+      diag = "MUITO RUIM: É PRECISO PROCURAR UM CURSINHO DE NÍVEL FORTE + PROGRAMAS DE ESTUDOS COMPLEMENTARES (ALÉM DE ESTUDAR EM CASA).";
+    } 
+    else if (classA === "A-" && classB === "B+/-" && classC === "C+/-") {
+      diag = "PÉSSIMO: PROCURE UM CURSINHO PREPARATÓRIO PARA O ENSINO MÉDIO E ADOTE UMA ROTINA INTENSA DE ESTUDOS (ALÉM DE ESTUDAR EM CASA).";
+    } 
+    else if (classA === "A-" && classB === "B+" && classC === "C+/-") {
+      diag = "RESULTADO HORRÍVEL: CURSINHO PREPARATÓRIO PARA O ENSINO MÉDIO, ROTINA INTENSA DE ESTUDOS E MUITO EXERCÍCIO BÁSICO (ALÉM DE ESTUDAR EM CASA).";
+    } 
+    else if (classA === "A-" && classB === "B-" && classC === "C+") {
+      diag = "PRÓXIMO DO TRÁGICO: RECOMEÇAR O ENSINO MÉDIO, REVEJA TODOS OS CONTEÚDOS ATRAVÉS DE VIDEOAULAS COM ANOTAÇÕES E EXERCÍCIOS (ALÉM DE ESTUDAR EM CASA).";
+    } 
+    else if (classA === "A-" && classB === "B+/-" && classC === "C+") {
+      diag = "TRAGÉDIA: É PRECISO REFORÇO ESCOLAR MÉDIO COM REVISÃO DO FUNDAMENTAL II E DO ENSINO MÉDIO (ALÉM DE ESTUDAR EM CASA).";
+    } 
+    else if (classA === "A+" || classB === "B+/-" || classC === "C+/-") {
+      diag = "MELHORANDO: FOQUE EM COLOCAR OS C´S NOS B´S (COMEÇAR A ENTENDER O QUE NÃO SEI: ESTUDE POR APOSTILA) -  OU SEJA, DOMINUIR C'S, AUMENTAR OS B'S PARA DEPOIS AUMENTAR OS A'S.";
+    } 
+    else {
+      diag = "ABAIXO DA TRAGÉDIA: REVER FUNDAMENTAL II E CORRIGIR LACUNAS DE APRENDIZADO BÁSICAS (REFORÇO ESCOLAR FORTE). ESTUDAR EM CASA.";
     }
 
     setDiagnostico(diag);
