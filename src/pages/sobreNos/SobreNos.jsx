@@ -40,7 +40,7 @@ export default function SobreNos() {
     <div className="card-nome">Jovana Oliveira</div>
     <div className="card-contato">
       <div className="contato-label">Email para contato:</div>
-      <div className="contato-email">jovana@etec.com</div>
+      <div className="contato-email">jovana.silva01@etec.sp.gov.br</div>
     </div>
   </div>
   <div className="card">
@@ -48,7 +48,7 @@ export default function SobreNos() {
     <div className="card-nome">Karinne Angelo</div>
     <div className="card-contato">
       <div className="contato-label">Email para contato:</div>
-      <div className="contato-email">karinne@etec.com</div>
+      <div className="contato-email">karinn3.angelo@gmail.com</div>
     </div>
   </div>
   <div className="card">
