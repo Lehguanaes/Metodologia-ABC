@@ -8,6 +8,8 @@
 
 O website de metodologia ABC é um auxiliador de autoavaliação que ajuda você a medir seu desempenho em simulados ou provas do ENEM.
 
+A metodologia ABC fornece diagnósticos com dicas e gráficos! 
+
 Ela facilita a identificação de pontos fortes e fracos, além de orientar na organização dos estudos.
 
 ### Venha conhecer e saber mais!
